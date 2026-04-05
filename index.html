@@ -278,6 +278,110 @@
       color: #fff;
     }
 
+    /* PROJECT FEATURE */
+    .project-feature {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      margin-top: 5rem;
+      transition: border-color 0.3s;
+    }
+
+    .project-feature:hover {
+      border-color: rgba(99,102,241,0.35);
+    }
+
+    .project-video-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #0d0d0d;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .project-video-wrap video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .project-video-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .project-video-placeholder span {
+      font-size: 2rem;
+      opacity: 0.3;
+    }
+
+    .project-video-placeholder p {
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    .project-info {
+      padding: 2rem 2.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .project-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .project-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      color: #888;
+      line-height: 1.8;
+      max-width: 560px;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .tag {
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 0.3rem 0.8rem;
+    }
+
     /* FOOTER */
     footer {
       text-align: center;
@@ -311,6 +415,7 @@
     <ul class="nav-links">
       <li><a href="#about">À propos</a></li>
       <li><a href="#work">Projets</a></li>
+      <li><a href="#2minutes">2 Minutes</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -358,6 +463,39 @@
         <div class="card-title">App Notes IA</div>
         <p class="card-desc">Prends des notes et laisse l'IA les organiser, résumer ou enrichir pour toi.</p>
       </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- 2 MINUTES -->
+  <section id="2minutes">
+    <p class="section-label reveal">Projet en cours</p>
+    <h2 class="section-title reveal reveal-delay-1">2 Minutes</h2>
+    <p class="section-text reveal reveal-delay-2">
+      Une app mobile contre la procrastination. Tu nommes ce que tu évites — l'IA génère une micro-action faisable en 2 minutes. Système de progression, streaks, et suivi de tes fils d'action.
+    </p>
+
+    <div class="project-feature reveal reveal-delay-2">
+
+      <div class="project-video-wrap">
+        <video src="2minutes.mov" controls playsinline></video>
+      </div>
+
+      <div class="project-info">
+        <span class="project-badge">App Mobile</span>
+        <h3 class="project-title">Commence. Maintenant.</h3>
+        <p class="project-desc">
+          2 Minutes transforme n'importe quel objectif en une action si petite qu'il est impossible de la rater. Chaque session génère la suite logique de la précédente — tu construis un vrai fil de progression, pas juste une liste de tâches.
+        </p>
+        <div class="project-tags">
+          <span class="tag">React Native</span>
+          <span class="tag">Expo</span>
+          <span class="tag">Claude AI</span>
+          <span class="tag">Node.js</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
